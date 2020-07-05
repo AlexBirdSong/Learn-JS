@@ -1,5 +1,3 @@
 'use strict'
-alert("Проверка работы alert");
-prompt("prompt работает?", "да");
-let isConfirm = confirm("confirm работает?");
-alert( isConfirm );
+let username = prompt("Как тебя зовут?", "Вася");
+alert( "Тебя зовут " + username + "!" );

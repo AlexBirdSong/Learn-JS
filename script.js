@@ -1,3 +1,7 @@
 'use strict'
-let username = prompt("Как тебя зовут?", "Вася");
-alert( "Тебя зовут " + username + "!" );
+
+for(let i = 0 ; i<=10 ; i++){
+    if(i%2==0){
+        alert(i);
+    }
+}

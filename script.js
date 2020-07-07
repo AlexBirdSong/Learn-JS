@@ -1,13 +1,15 @@
 'use strict'
 
-let n = 10;
-
-nextPrime:
-for (let i = 2; i <= n; i++) { // Для всех i...
-
-  for (let j = 2; j < i; j++) { // проверить, делится ли число..
-    if (i % j == 0) continue nextPrime; // не подходит, берём следующее
+function findmax(a , b){
+  if (a>b){
+    return a;
   }
-
-  alert( i ); // простое число
-}
+  else return b;
+};
+let i;
+i=findmax(2, 5);
+alert( i );
+i=findmax(3, -1);
+alert( i );
+i=findmax(1, 1);
+alert( i );

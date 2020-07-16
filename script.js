@@ -1,8 +1,15 @@
 'use strict'
 
-let a = prompt('Введите a', 5);
-let b = prompt('Введите b', 7);
+function readNumber(){
+  let num="sdsa";
+  while ( typeof(num) == 'string'){
+    num = prompt('Введите число',0);
+    if (isFinite(num)){
+      //alert('число: '+ num)
+      //break;
+      return num;
+    }
+  }
+}
 
-let sum = parseInt(a,10)+parseInt(b,10);
-
-alert(sum);
+alert(`Число: ${readNumber()}`);

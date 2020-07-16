@@ -1,12 +1,8 @@
 'use strict'
 
- let ask = (question, yes, no) => {
-  if (confirm(question)) yes()
-  else no();
-}
+let a = prompt('Введите a', 5);
+let b = prompt('Введите b', 7);
 
-ask(
-  "Вы согласны?",
-  function() { alert("Вы согласились."); },
-  function() { alert("Вы отменили выполнение."); }
-);
+let sum = parseInt(a,10)+parseInt(b,10);
+
+alert(sum);

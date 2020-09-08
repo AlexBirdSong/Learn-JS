@@ -1,14 +1,10 @@
 'use strict'
 
-function ucFirst(str){
- if (str!=""){
-    let nstr = str[0].toUpperCase()+str.slice(1);
-    alert(nstr);
- }
-else{
-    alert("Имя пусто")
-}
+function extractCurrencyValue(str){
+let positionDollarSimbol = str.indexOf("$",0);
+let positionSpaceAfterValue = str.indexOf(" ",positionDollarSimbol);
+let servicecoast = str.slice(positionDollarSimbol+1,positionSpaceAfterValue);
+alert (servicecoast);
 }
 
-let str = "Валера";
-ucFirst(str)
+extractCurrencyValue("Стоимость услуги $120 ")

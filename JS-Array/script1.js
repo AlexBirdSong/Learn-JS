@@ -1,14 +1,10 @@
 'use strict'
 
-function ucFirst(str){
- if (str!=""){
-    let nstr = str[0].toUpperCase()+str.slice(1);
-    alert(nstr);
- }
-else{
-    alert("Имя пусто")
-}
-}
+let styles = ["Джаз","Блюз"];
+styles.push("Рок-н-ролл");
+let centerstring = Math.round(styles.length/2)-1;
+styles[centerstring] = "Классика";
+styles.shift();
+styles.unshift("Рэп" , "Регги" );
 
-let str = "Валера";
-ucFirst(str)
+alert(styles);

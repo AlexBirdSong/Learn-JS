@@ -1,14 +1,9 @@
 'use strict'
 
-function ucFirst(str){
- if (str!=""){
-    let nstr = str[0].toUpperCase()+str.slice(1);
-    alert(nstr);
- }
-else{
-    alert("Имя пусто")
+function checkSpam(str){
+    let lowerstr = str.toLowerCase();
+    if (lowerstr.includes('viagra')||(lowerstr.includes('xxx')))return true
+    else return false
 }
-}
-
-let str = "Валера";
-ucFirst(str)
+let str = prompt("Введите текст");
+alert(checkSpam(str));

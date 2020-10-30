@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<script>
+'use strict';
+
+(async () => {
+let url = 'http://api.github.com/AlexBirdSong/Browser-document-events-interfaces/commits/master';
+let response = await fetch(url);
+
+let commits = await response.json(); // читаем ответ в формате JSON
+
+alert(message);
+})()
+</script>

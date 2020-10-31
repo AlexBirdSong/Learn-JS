@@ -1,15 +1,17 @@
 <!DOCTYPE html>
+
+<script src=""></script>
 <script>
 'use strict';
 
 (async () => {
-    let url = 'https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits';
+    let url = 'https://api.github.com/users/AlexBirdSong';
 
 let response = await fetch(url);
 
 let commits = await response.json(); // читаем ответ в формате JSON
 
-alert(commits[10].committer.login);
+alert(commits.login);
 
 })()
 </script>

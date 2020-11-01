@@ -8,10 +8,12 @@
     let url = 'https://api.github.com/users/AlexBirdSong';
 
 let response = await fetch(url);
+if (response.ok){
+    let commits = await response.json(); // читаем ответ в формате JSON
+    alert(commits.login);
+}
+else alert ("Ошибка HTTP: " +  response.status)
 
-let commits = await response.json(); // читаем ответ в формате JSON
-
-alert(commits.login);
 
 })()
 </script>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cookie</title>
+</head>
+<body>
+    <script>
+    let date = new Date(Date.now() + 86400e3);
+    date = date.toUTCString();
+    document.cookie = "user=John; expires=" + date;
+    alert(document.cookie);
+    </script>
+</body>
+</html>

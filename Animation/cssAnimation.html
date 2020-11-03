@@ -15,6 +15,8 @@
 
       height: 24px;
       /* -> 240px */
+
+      transition: width 3s, height 3s;
     }
   </style>
 </head>
@@ -23,6 +25,12 @@
 
   <img id="flyjet" src="https://en.js.cx/clipart/flyjet.jpg">
 
+  <script>
+    flyjet.onclick = function(){
+      this.style.width = '400px';
+      this.style.height = '240px';
+    }
+  </script>
 
 </body>
 
